@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title>Site-specific: an introduction to making placeful websites</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Note: This format was adapted from the HTML slide format developed for the Web Typography at Letterform Archive: http://motsuka.com/web-typography-workshop -->
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<link rel="stylesheet" type="text/css" href="slide-styles.css">
+		<link rel="icon"type="image/svg" href="../../assets/favicon.svg">
+		<script src="assets/js/slides.js"></script>
+</head>
+
+<body>
+<body class="layout-slides">
+<main>
+<!-------------------------------------
+				INTRO
+-------------------------------------->
+
+	<section class="slide divider">
+			<div class="text">
+				<h1>Site-specfic Web</h1>
+				<h2>An introduction to making placeful websites</h2>
+			</div>
+			<footer>
+				Kirsten Spruit and Benjamin Earl, 29th & 30th March 2024, Topolò.
+			</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h3>prompt for workshop:</h3>
+			<p>Choose a place you want to dedicate a website to.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>How to code a place</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h3>What we will need</h3>
+			<p>A laptop with:
+				<ol>
+					<li>a browser</li>
+					<li>a text editor</li>
+					<li>an internet connection</li>
+				</ol><br>
+				Pens & paper
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>helpful hints</h1>
+			<ul>
+				<li>viewing the source</li>
+				<li>inspecting the element</li>
+				<li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1 style="text-transform: uppercase;">HTML</h1>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1 style="text-transform: uppercase;">HTML</h1>
+			<h1><a href="https://info.cern.ch/hypertext/WWW/TheProject.html">Hypertext</a> Markup Language</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>HYPERLOCAL</h1>
+			<p>As defined in the Oxford Dictionary, "hyperlocal" is an adjective that relates to or focuses on matters concerning a small community or a specific geographical area.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>&lt;h1&gt;HYPERLOCAL&lt;/h1&gt;</h1>
+			<p>&lt;p&gt;As defined in the Oxford Dictionary, "hyperlocal" is an adjective that relates to or focuses on matters concerning a small community or a specific geographical area.&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<!-- <figure>
+			<img src="media/element-explained.png" alt="">
+		</figure> -->
+		<div class="text">
+			<div class="white-box">
+				<span class="grey-box">
+				<span class="green">&lt;p&gt;</span> <span class="blue">a small community</span> <span class="red">&lt;/p&gt;</span>
+				</span>
+				<br><br>
+				<span class="grey-box">= element</span><br>
+				<span class="green">= opening tag</span><br>
+				<span class="blue">= content</span><br>
+				<span class="red">= closing tag</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h3>html tags</h3>
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div" target="_blank">div</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/ol" target="_blank">ol</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/Heading_Elements" target="_blank">h1</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/p" target="_blank">p</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a" target="_blank">a</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details" target="_blank">detail</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/strong" target="_blank">strong</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">audio</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">iframe</a></li>
+			</ul>
+			more tags <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" target="_blank">here</a>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>Nesting</h1>
+			<p>Elements can be placed within other elements. This is called nesting.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>&lt;p&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>&lt;p&gt;hyperlocal is an adjective that relates to or focuses on matters concerning &lt;strong&gt;<strong>a small community</strong>&lt;/strong&gt;&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>&lt;section <span style="color:">class="slide"</span>&gt;<br>
+				&ensp;&ensp;&ensp;&ensp;&lt;p&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;
+				&ensp;&ensp;&lt;/div&gt;<br>
+				&lt;/section&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>Attributes</h1>
+			<p>Elements can also have attributes. These contain extra information about the element that won't appear in the content.</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<!-- <figure>
+			<img src="media/attribute-explained.png" alt="">
+		</figure> -->
+		<div class="text">
+			<div class="white-box">
+				<span class="grey-box">
+					<span class="green">&lt;p <span class="yellow">class="big-text"</span></span>&gt; <span class="blue">a small community</span> <span class="red">&lt;/p&gt;</span>
+				</span>
+				<br><br>
+				<span class="grey-box">= element</span><br>
+				<span class="green">= opening tag</span><br>
+				<span class="yellow">= attribute</span><br>
+				<span class="blue">= content</span><br>
+				<span class="red">= closing tag</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>&lt;p class="definition"&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>&lt;p style="color: red;"&gt;<span style="color:red;">hyperlocal is an adjective that relates to or focuses on matters concerning a small community</span>&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Exercise 1</h1>
+			<h2>describing your place in pseudocode</h2>
+		</div>
+	</section>
+	
+	<section class="slide divider">
+		<figure>
+			<img src="media/pseudocode.jpeg" alt="">
+		</figure>
+		<footer>
+			photo taken during Hackers & Designers Summercamp 2023
+		</footer>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Exercise 2</h1>
+			<h2>translate your pseudocode into <i>real</i> code</h2>
+		</div>
+	</section>
+
+
+
+
+	<section class="slide divider">
+		<div class="text">
+			<h1 style="text-transform: uppercase;">CSS</h1>
+			<h1>Cascading Style Sheets</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<p>CSS is a language used to describe how the elements within an HTML documented should be rendered on screen.</p>
+			<p>
+			As the “cascading” in CSS suggests, the styling rules will overwrite one another based on its inherent hierarchy and order of appearance (when there are conflicting rulesets, the last one overwrites what came before).
+			</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Ways of styling</h2>
+			<div class="text">
+				<p>
+					Styling can be done in-line (1), internal inside the &lt;head&gt; of an html file (2) and external inside a CSS file (3).
+				</p>
+				<p>1) &lt;p style="color: red;"&gt;<span style="color:red;">hyperlocal is an adjective that relates to or focuses on matters concerning a small community</span>&lt;/p&gt;</p>
+				<p>
+					2)
+					&lt;style&gt; <br>
+					p {<br>
+						color: red;<br>
+					}<br>
+					&lt;/style&gt;
+				</p>
+				<p>
+					3) p {<br>
+						color: red;<br>
+					}<br>
+					(make sure to link the stylesheet in the &lt;head&gt;)
+				</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Anatomy of a CSS ruleset</h2>
+			<div class="white-box">
+				<span class="green">p</span> { <br>
+					<span class="grey-box"><span class="blue">color</span>: <span class="red">red</span>;</span><br>
+				}
+				<br><br>
+				<span class="green">= selector</span><br>
+				<span class="grey-box">= declaration</span><br>
+				<span class="blue">= property</span><br>
+				<span class="red">= property value</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Types of selectors</h2>
+			<ul>
+				<li>Element selector → p { }</li>
+				<li>Class selector → .special { }</li>
+				<li>ID selector → #snowflake { } </li>
+				<li>Type selector → span { }</li>
+				<li>Pseudo-class selector → a:hover { } </li>
+			</ul>
+
+		</div>
+	</section>
+
+
+	<section class="slide">
+		<div class="text">
+			<h2>Thinking in- and outside the box</h2>
+			<div class="box1">
+				<div class="box2">
+					<p>This box has a blue dashed <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border" target="_blank">border</a>. It also has a <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/margin" target="_blank">margin</a> (empty space outside of the border in relation to its parent box) and <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/padding" target="_blank">padding</a> (empty space between the border and content)</p>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Display property</h2>
+			<div class="box1 stacked">
+				<div class="box2">
+					
+				</div>
+				<div class="box2">
+					
+				</div>
+				<div class="box2">
+					
+				</div>
+			</div>
+			<p>display: block;</p>
+			<div class="box1 grid">
+				<div class="box2">
+					
+				</div>
+				<div class="box2">
+					
+				</div>
+				<div class="box2">
+					
+				</div>
+			</div>
+			<p>display: grid;<br>
+				grid-template-columns: 1fr 1fr 1fr;</p>
+			<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">More on display options</a>
+
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Sizing</h2>
+			<div class="box1" style="width:300px;height:200px;">
+				
+			</div>
+			<p>width: 300px;<br>
+			height: 200px;</p>
+			<div class="box1" style="width:30vw;height:20vh;">
+
+			</div>
+			<p>width: 30vw;<br>
+				height: 20vh;</p>
+			<a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS" target="_blank">More on sizing</a>
+
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Exercise 3</h1>
+			<h2>style your place using CSS</h2>
+		</div>
+	</section>
+
+	<section class="slide divider end">
+		<div class="text">
+			<h1>End of Day 1</h1>
+			<h2>A domani!</h2>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Site-specfic Web</h1>
+			<h2>An introduction to making placeful websites<br> Day 2</h2>
+			
+		</div>
+		<footer>
+			Kirsten Spruit and Benjamin Earl, 29th & 30th March 2024, Topolò.
+		</footer>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Incomplete guide to Hosting</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<p>Langage of hosting<br>
+				<small>(borrowed from <a href="https://fruitful.school/" target="_blank">Fruitful Schools</a> guide to hosting with edits)</small>
+			</p>
+		<table>
+			<tbody><tr>
+			  <td class="symbol">📝</td>
+			  <td class="word">website</td>
+			  <td>a file or a bundle of files living on a server somewhere</td>
+			</tr>
+			<tr>
+				<td class="symbol">🖥</td>
+				<td class="word">server</td>
+				<td>a computer that’s <s>always</s> connected to the internet, so when someone types your URL into a browser, the server will offer up your website. usually you have to pay for a server, also called “hosting” or a “host.” <span class="blue">however, self-hosting is also an option</span></td>
+			  </tr>
+			  <tr>
+				<td class="symbol">📍</td>
+				<td class="word">IP</td>
+				<td>“internet protocol” address, which is a unique string of numbers that’s an address for any device connected to the internet which other machines use to find that device—whether it's your home router, your computer, your cellphone, or a server<br><br><span class="example"><a href="http://198.74.60.197/">198.74.60.197</a>, 10.0.1.18</span></td>
+			  </tr>
+			  <tr>
+				<td class="symbol">〰️</td>
+				<td class="word">domain</td>
+				<td>a <s>understandable</s> human-readable piece of language that points to an IP address<br><br><span class="example"><a href="https://robidacollective.com/">robidacollective.com</a>, <a href="http://special.fish">special.fish</a></span></td>
+			  </tr>
+		  </tbody></table>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<p>Langage of hosting<br>
+				<small>(borrowed from <a href="https://fruitful.school/" target="_blank">Fruitful Schools</a> guide to hosting with edits)</small>
+			</p>
+			<table>
+				<tbody>
+					<tr>
+						
+						<td class="symbol">〰️/➿<br>
+						</td><td class="word">URL</td>
+						<td>“universal resource location” which is the specific address to a specific web page.<br><br><span class="example"><a href="https://robidacollective.com/projects/robida-magazine">https://robidacollective.com/projects/robida-magazine</a></span></td>
+					  </tr>
+					  <tr>
+						<td class="symbol">💁🖥‍<br>
+						</td><td class="word">hosting provider</td>
+						<td>a business that handles providing servers / web hosting<br><br>
+						<a href="https://greenhost.net/">greenhost.net</a>, <a href="https://www.dreamhost.com/">dreamhost.com</a></td>
+					  </tr>
+					  <tr>
+						<td class="symbol">💁〰️<br>
+						</td><td class="word">domain name registrar</td>
+						<td>a business that handles the reservation of domain names as well as the assignment of IP addresses for those domain names.<br><br><span class="example"><a href="http://name.com">name.com</a>, <a href="https://iwantmyname.com">iwantmyname.com</a>, <a href="http://namecheap.com">namecheap.com</a>, and <a href="http://gandi.net">gandi.net</a></span>
+						</td>
+					  </tr>
+					  <tr>
+						<td class="symbol">📚
+						  <br><br>
+						  📗📕📘<br><br>
+							〰️📍<br>
+							〰️📍<br>
+							〰️📍<br>
+						</td><td class="word">DNS</td>
+						<td>“domain name system” which is like all the phonebooks of the entire internet</td>
+					  </tr>
+			</tbody>
+			</table>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<p>Langage of hosting<br>
+				<small>(borrowed from <a href="https://fruitful.school/" target="_blank">Fruitful Schools</a> guide to hosting with edits)</small>
+			</p>
+			<table>
+				<tbody>
+					<tr>
+						<td class="symbol">📗
+						</td><td class="word">nameserver</td>
+						<td>
+						  a single phonebook that is owned by the hosting provider that lists all the domain names associated with its customers
+						</td>
+					  </tr>
+					  <tr>
+						<td class="symbol">〰️📍
+						</td><td class="word">DNS record</td>
+						<td>
+						  a line in the metaphorical phonebook
+						</td>
+					  </tr>
+					  <tr>
+						<td class="symbol">🌐<br>
+						</td><td class="word">TLD</td>
+						<td>a “top-level domain” is the rightmost part of a domain name such as <i>.com</i>. certain TLDs are reserved for specific geographic areas or societal services<br><br><span class="example">Other examples include .org, .net, .school, etc. New TLDs are added every year, see this <a href="https://en.wikipedia.org/wiki/List_of_Internet_top-level_domains">list on Wikipedia</a>. Google around for the latest.</span>
+						</td>
+					  </tr>
+			</tbody>
+			</table>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>What happens when you type in <a href="https://robidacollective.com/">robidacollective.com</a></h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="hosting-box1">
+			<p>robidacollective.com</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="hosting-box1">
+			<p>robidacollective.com</p>
+			</div>
+			<div class="hosting-box2">
+				<p>94.23.66.84</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="hosting-box1">
+			<p>robidacollective.com</p>
+			</div>
+			<div class="hosting-box2">
+				<p>94.23.66.84</p>
+			</div>
+			<div class="hosting-grid">
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="hosting-box1">
+				<p>robidacollective.com</p>
+			</div>
+			<div class="hosting-box2">
+				<p>94.23.66.84</p>
+			</div>
+			<div class="hosting-grid">
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+				<div class="hosting-box2">
+					<p>📄</p>
+				</div>
+			</div>
+			<div class="hosting-box3">
+				<p>robidacollective.com</p>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Simple and Free hosting:</h2>
+			<h2><a href="https://pages.github.com/" target="_blank">Github Pages</a></h2>
+		</div>
+	</section>
+
+	<section class="slide divider">
+		<div class="text">
+			<h1>Situated Hosting<br>
+			Poetic Hosting</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/data-centre.jpeg" alt="" style="width:800px;">
+		</figure>
+		<footer>
+			<p>generic image of the interior of a data centre</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/raspi.png" alt="" style="width:600px;">
+		</figure>
+		<footer>
+			<p>Raspberry Pi, a single-board computer that can host a website, amongst other things</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/solar-powered.png" alt="" style="width:600px;">
+		</figure>
+		<footer>
+			<p>solar powering the Raspberry Pi hosting the files of <a href="https://extrapractice.space/">extrapractice.space</a></p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/ESP32_1.png" alt="" style="width:600px;">
+		</figure>
+		<footer>
+			<p>An ESP-32 module that can host a 1MB website that is not connected to the internet</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<img src="media/website-in-field.png" alt="" style="width:600px;">
+		</figure>
+		<footer>
+			<p>This ESP module was used to host a website about a field, in a field.</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure class="img-group">					
+			<div class="img"><img src="media/situated-website.jpg" alt=""></div>
+			<div class="img"><img src="media/situated-website3.jpg" alt=""></div>
+			
+	</figure>
+		<footer>
+			<p>The Robida website in the Robida HQ, Topolò</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>					
+			<img src="media/lan-party.jpeg" alt="">
+		</figure>
+		<footer>
+			<p>LAN party!</p>
+		</footer>
+	</section>
+
+</main>
+</body>
+</html>

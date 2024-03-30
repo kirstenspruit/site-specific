@@ -13,6 +13,7 @@ Note: This was adapted from http://motsuka.com/web-typography-workshop
   --yellow: #fceb7c;
   --green: #3e8044;
   --red: #f54538;
+  --grey: #a4a4a4;
 }
 
 body{
@@ -112,14 +113,14 @@ sup{
   padding: 0;
 }
 .slide li{
-  list-style-type: none;
+  /* list-style-type: none; */
   /* margin-bottom: 1em; */
   text-indent: -1em;
 }
 
-ul li::before{
+/* ul li::before{
   content: " — ";
-}
+} */
 
 .text {
   width: 36rem;
@@ -140,6 +141,7 @@ ul li::before{
 }
 .img-group .img{
   width: 50%;
+  padding:10px;
 }
 .img-group .img:first-child{
   margin-right: 1em;
@@ -170,7 +172,7 @@ th{
   border-bottom: 1px solid var(--brown);
 }
 td, th{
-  padding: 0.5em;
+  padding: 1rem;
   vertical-align: top;
 }
 td{
@@ -178,9 +180,9 @@ td{
   width: 30%;
   min-width: 25%;
 }
-td:first-child, th:first-child{
+/* td:first-child, th:first-child{
   padding-left: 0;
-}
+} */
 
 .white-box {
   background-color: white;
@@ -201,6 +203,10 @@ td:first-child, th:first-child{
 }
 .yellow {
   background-color: var(--yellow);
+}
+
+.grey {
+  color: var(--grey);
 }
 
 .box1 {

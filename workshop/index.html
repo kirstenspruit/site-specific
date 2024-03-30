@@ -20,12 +20,73 @@
 
 	<section class="slide divider">
 			<div class="text">
-				<h1>Site-specfic Web</h1>
+				<h1>Site-specific:</h1>
 				<h2>An introduction to making placeful websites</h2>
 			</div>
 			<footer>
 				Kirsten Spruit and Benjamin Earl, 29th & 30th March 2024, Topolò.
 			</footer>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Aims for the workshop</h2>
+			<ol>
+				<li>Introduce our coding principles</li>
+				<li>Outline what makes up a website</li>
+				<li>Learn basics of HTML & CSS (maybe Javascript)</li>
+				<li>Introduce principles of hosting</li>
+				<li>Make a site specific website</li>
+			</ol>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<h2>Schedule (29th)</h2>
+			<table style="width: 500px">
+				<thead>
+					<tr style="font-weight: bold;">
+						<td>Day 1: Friday</td>
+						<td>website → place</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>09:00–09:30</td>
+						<td>Introduction 👋</td>
+					</tr>
+					<tr>
+						<td>09:30–10:00</td>
+						<td>HTML basics 🏗️</td>
+					</tr>
+					<tr>
+						<td>10:00–10:45</td>
+						<td>HTML exercises 🪺</td>
+					</tr>
+					<tr>
+						<td>10:45–11:00</td>
+						<td>&lt;br&gt; 🫠</td>
+					</tr>
+					<tr>
+						<td>11:00–10:30</td>
+						<td>CSS basics 🎨</td>
+					</tr>
+					<tr>
+						<td>11:30–12:00</td>
+						<td>CSS exercises 💅</td>
+					</tr>
+					<tr>
+						<td>12:00–13:00</td>
+						<td>Website making 👩‍💻</td>
+					</tr>
+					<tr>
+						<td>13:00–13:30</td>
+						<td>Show 'n' tell 🖥️</td>
+					</tr>
+				</tbody>
+			</table>	
+		</figure>
 	</section>
 
 	<section class="slide">
@@ -37,17 +98,11 @@
 
 	<section class="slide">
 		<div class="text">
-			<h2>How to code a place</h2>
-		</div>
-	</section>
-
-	<section class="slide">
-		<div class="text">
 			<h3>What we will need</h3>
 			<p>A laptop with:
 				<ol>
-					<li>a browser</li>
-					<li>a text editor</li>
+					<li>a browser (Chrome, Firefox or Safari)</li>
+					<li>a code editor (<a href="https://code.visualstudio.com/" target="_blank">Visual Studio Code</a> or <a href="https://www.sublimetext.com/">Sublime Text</a>)</li>
 					<li>an internet connection</li>
 				</ol><br>
 				Pens & paper
@@ -55,20 +110,35 @@
 		</div>
 	</section>
 
+	<section class="slide divider">
+		<div class="text">
+			<h1>What is a website?</h1>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<iframe id="website-metaphors" title="Inline Frame Example" width="1000px" height="600" src="https://arena-attachments.s3.amazonaws.com/27172795/b166cdcf4342ea8c7d8c976d68b2b2c2.pdf?1711364410">
+			</iframe>
+		</figure>
+		<footer>PDF created by Laurel Schwulst</footer>
+	</section>
+
 	<section class="slide">
 		<div class="text">
-			<h1>helpful hints</h1>
+			<h1>Website = Files</h1>
 			<ul>
-				<li>viewing the source</li>
-				<li>inspecting the element</li>
-				<li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+				<li>index.html</li>
+				<li>style.css</li>
+				<li>script.js</li>
 			</ul>
 		</div>
 	</section>
 
-	<section class="slide divider">
+	<section class="slide">
 		<div class="text">
-			<h1 style="text-transform: uppercase;">HTML</h1>
+			<h1>index.html</h1>
+			<p>Hello world, this is my site specific site</p>
 		</div>
 	</section>
 
@@ -82,6 +152,56 @@
 	<section class="slide">
 		<div class="text">
 			<p>HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on.</p>
+			<footer><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started">MDN: Getting Started with HTML</a></footer>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Anatomy of HTML file</h2>
+			<div class="white-box">
+				<span class="grey">&lt;!doctype html&gt;</span><br>
+				<span class="red">&lt;html&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp;     &lt;head&gt;</span><br>
+				<br>
+				<br>
+				<br>
+				<span class="green">&nbsp;  &nbsp;     &lt;/head&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp;     &lt;body&gt;</span><br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<span class="blue">&nbsp;  &nbsp;     &lt;/body&gt;</span><br>
+				<span class="red">&lt;/html&gt;</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Anatomy of HTML file</h2>
+			<div class="white-box">
+				<span class="grey">&lt;!doctype html&gt;</span><br>
+				<span class="red">&lt;html&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp;     &lt;head&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp; &nbsp; &nbsp;     &lt;title&gt;&lt;/title&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;meta&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;link&gt;</span><br>
+				<span class="green">&nbsp;  &nbsp;     &lt;/head&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp;     &lt;body&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;img&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;div&gt;&lt;/div&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;h1&gt;&lt;/h1&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;p&gt;&lt;/p&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      &lt;a&gt;&lt;/a&gt;</span><br>
+				<span class="blue">&nbsp;  &nbsp; &nbsp; &nbsp;      ...</span><br>
+	
+				<span class="blue">&nbsp;  &nbsp;     &lt;/body&gt;</span><br>
+				<span class="red">&lt;/html&gt;</span>
+			</div>
 		</div>
 	</section>
 
@@ -100,9 +220,6 @@
 	</section>
 
 	<section class="slide">
-		<!-- <figure>
-			<img src="media/element-explained.png" alt="">
-		</figure> -->
 		<div class="text">
 			<div class="white-box">
 				<span class="grey-box">
@@ -131,8 +248,41 @@
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio" target="_blank">audio</a></li>
 				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe" target="_blank">iframe</a></li>
 			</ul>
-			more tags <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/portal" target="_blank">here</a>
+			more tags <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element" target="_blank">here</a>
 		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>DIV</h1>
+			<p>"The &lt;div&gt; HTML element is the generic container for flow content."</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<div style="width: 600px; height: 600px; background-color: green; padding: 10px; margin: 10px">&lt;div&gt;
+			</div>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<div style="width: 600px; height: 600px; background-color: green; padding: 10px; margin: 10px">&lt;div&gt;
+				<div style="width: 500px; height: 400px; background-color: red; position: absolute; padding: 10px; margin: 10px">&lt;div&gt;
+				</div>
+			</div>
+		</figure>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<div style="width: 600px; height: 600px; background-color: green; padding: 10px; margin: 10px">&lt;div&gt;
+				<div style="width: 500px; height: 400px; background-color: red; position: absolute; padding: 10px; margin: 10px">&lt;div&gt;
+					<div style="width: 400px; height: 200px; background-color: yellow; position: absolute; padding: 10px; margin: 10px">&lt;div&gt;</div>
+				</div>
+			</div>
+		</figure>
 	</section>
 
 	<section class="slide">
@@ -158,7 +308,7 @@
 		<div class="text">
 			<p>&lt;section <span style="color:">class="slide"</span>&gt;<br>
 				&ensp;&ensp;&ensp;&ensp;&lt;p&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;
-				&ensp;&ensp;&lt;/div&gt;<br>
+				&ensp;&ensp;<br>
 				&lt;/section&gt;</p>
 		</div>
 	</section>
@@ -171,9 +321,6 @@
 	</section>
 
 	<section class="slide">
-		<!-- <figure>
-			<img src="media/attribute-explained.png" alt="">
-		</figure> -->
 		<div class="text">
 			<div class="white-box">
 				<span class="grey-box">
@@ -191,13 +338,103 @@
 
 	<section class="slide">
 		<div class="text">
-			<p>&lt;p class="definition"&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;</p>
+			<p>&lt;p&gt;hyperlocal is an adjective that relates to or focuses on matters concerning a small community&lt;/p&gt;</p>
 		</div>
 	</section>
 
 	<section class="slide">
 		<div class="text">
 			<p>&lt;p style="color: red;"&gt;<span style="color:red;">hyperlocal is an adjective that relates to or focuses on matters concerning a small community</span>&lt;/p&gt;</p>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="white-box">
+				<span class="grey-box"><span class="blue">a small</span>
+					<span class="green">&lt;a <span class="yellow">href="community.com"</span>&gt; <span class="blue">community</span></span> <span class="red">&lt;/a&gt;</span>
+				</span>
+				<br><br>
+				<span class="grey-box">= element</span><br>
+				<span class="green">= opening tag</span><br>
+				<span class="yellow">= attribute</span><br>
+				<span class="blue">= content</span><br>
+				<span class="red">= closing tag</span>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="white-box">
+				<span style="font-size: 60px;">&lt;h1&gt;heading 1&lt;/h1&gt;</span>
+				<span style="font-size: 40px;">&lt;h2&gt;heading 2&lt;/h2&gt;</span><br>
+				<span style="font-size: 35px;">&lt;h3&gt;heading 3&lt;/h3&gt;</span><br>
+				<span style="font-size: 30px;">&lt;h4&gt;heading 4&lt;/h4&gt;</span><br>
+				<span style="font-size: 25px;">&lt;h5&gt;heading 5&lt;/h5&gt;</span><br>
+				<span style="font-size: 20px;">&lt;h6&gt;heading 6&lt;/h6&gt;</span><br>
+				<br>
+			</div>
+		</div>
+	</section>
+	<section class="slide">
+		<div class="text">
+			<div class="white-box">
+				<p>Unordered List</p>
+				<span>&lt;ul&gt;</span><br>
+				<span>&lt;li&gt;list item&lt;/li&gt;</span><br>
+				<span>&lt;li&gt;list item&lt;/li&gt;</span><br>
+				<span>&lt;/ul&gt;</span>
+				<br>
+				<br>
+					<ul style="padding-left:15px">
+						<li>list item</li>
+						<li>list item</li>
+					</ul>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="white-box">
+				<p>Ordered List</p>
+				<span>&lt;ol&gt;</span><br>
+				<span>&lt;li&gt;list item&lt;/li&gt;</span><br>
+				<span>&lt;li&gt;list item&lt;/li&gt;</span><br>
+				<span>&lt;/ol&gt;</span>
+				<br>
+				<br>
+					<ol style="padding-left:20px">
+						<li>list item</li>
+						<li>list item</li>
+					</ol>
+					<br>
+			</div>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<div class="white-box">
+				<span class="grey-box"><span class="blue"></span>
+					<span class="green">&lt;img <span class="yellow">src="a-nice-image.jpg" alt="a pretty picture"</span>&gt;
+				</span><br><br>
+				<img src="https://d2w9rnfcy7mm78.cloudfront.net/27173021/original_d72f1990cb721babbf2531a358fd7cc8.png?1711366072?bc=0" alt="a picture of some trees with sunlight filtering through">
+				<br><br>
+				<span class="grey-box">= element</span><br>
+				<span class="green">= void/empty tag</span><br>
+				<span class="yellow">= attributes</span><br>
+			</div>
+		</div>
+	</section>
+
+
+
+
+	<section class="slide">
+		<div class="text">
+			<h2>How to code a place</h2>
 		</div>
 	</section>
 
@@ -221,6 +458,18 @@
 		<div class="text">
 			<h1>Exercise 2</h1>
 			<h2>translate your pseudocode into <i>real</i> code</h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h1>helpful hints</h1>
+			<ul>
+				<li>viewing the source</li>
+				<li>inspecting the element</li>
+				<li><a href="https://developer.mozilla.org/en-US/">MDN Web Docs</a></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element">A list of all HTML Elements</a></li>
+			</ul>
 		</div>
 	</section>
 
@@ -363,10 +612,30 @@
 		</div>
 	</section>
 
+	<section class="slide">
+		<div class="text">
+			<h2>What else...</h2>
+
+			<ul>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/color" target="_blank">Color-related properties (color, background-color...)</a><br></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Positioning" target="_blank">Position (fixed, absolute, sticky, relative...)</a><br></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align" target="_blank">Text-align</a><br></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius" target="_blank">Border-radius</a><br></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font" target="_blank">Font-related properties (font-family, font-style, font-weight...)</a><br></li>
+				<li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries" target="_blank">Media queries (mobile screen dimensions...)</a><br></li>
+				<p>Etcetera etcetera :-)</p>
+			</ul>
+
+			
+
+		</div>
+	</section>
+
 	<section class="slide divider">
 		<div class="text">
 			<h1>Exercise 3</h1>
-			<h2>style your place using CSS</h2>
+			<h2>Style your place using CSS</h2>
+			<p>Tip: give all your elements a different background-color and/or border to make the boxes more visible</p>
 		</div>
 	</section>
 
@@ -379,13 +648,45 @@
 
 	<section class="slide divider">
 		<div class="text">
-			<h1>Site-specfic Web</h1>
+			<h1>Site-specific Web</h1>
 			<h2>An introduction to making placeful websites<br> Day 2</h2>
 			
 		</div>
 		<footer>
 			Kirsten Spruit and Benjamin Earl, 29th & 30th March 2024, Topolò.
 		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
+			<h2>Schedule (30th)</h2>
+			<table style="width: 500px">
+				<thead>
+					<tr style="font-weight: bold;">
+						<td>Day 2: Saturday</td>
+						<td>place ← website</td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>13:00–13:45</td>
+						<td>Website Inspiration + Introduction to hosting 🏡</td>
+					</tr>
+					<tr>
+						<td>13:45–16:30</td>
+						<td>Working on site specific website 🧰</td>
+					</tr>
+					<tr>
+						<td>16:30–17:00</td>
+						<td>Prepare for LAN party 🔌</td>
+					</tr>
+					<tr>
+						<td>17:00–??:??</td>
+						<td>LAN PARTY! 🏘️</td>
+					</tr>
+				</tbody>
+			</table>	
+		</figure>
 	</section>
 
 	<section class="slide divider">
@@ -575,6 +876,22 @@
 		</div>
 	</section>
 
+	<section class="slide">
+		<div class="text">
+			<h2>Domain Naming</h2>
+			<h2><a href="https://www.namecheap.com/" target="_blank">Namecheap.com</a></h2>
+			<h2><a href="https://ambient.institute/domain-naming/" target="_blank">Domain Naming by Chia Amisola</a></h2>
+		</div>
+	</section>
+
+	<section class="slide">
+		<div class="text">
+			<h2>Paid and more flexible hosting:</h2>
+			<h2><a href="https://www.nearlyfreespeech.net/" target="_blank">NearlyFreeSpeech.net</a></h2>
+			<h2><a href="https://greenhost.net/" target="_blank">Greenhost.net</a></h2>
+		</div>
+	</section>
+
 	<section class="slide divider">
 		<div class="text">
 			<h1>Situated Hosting<br>
@@ -611,6 +928,25 @@
 
 	<section class="slide">
 		<figure>
+			<img src="media/varia-server.jpeg" alt="" style="width:600px;">
+		</figure>
+		<footer>
+			<p>The Varia server hosting all Varia's digital infrastructure</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure class="img-group">	
+			<div class="img"><img src="media/lukas.jpeg" alt=""></div>
+			<div class="img"><img src="media/lukas2.jpeg" alt=""></div>
+		</figure>
+		<footer>
+			<p>Server programmed, designed and built by Lukas Engelhardt</p>
+		</footer>
+	</section>
+
+	<section class="slide">
+		<figure>
 			<img src="media/ESP32_1.png" alt="" style="width:600px;">
 		</figure>
 		<footer>
@@ -619,8 +955,9 @@
 	</section>
 
 	<section class="slide">
-		<figure>
-			<img src="media/website-in-field.png" alt="" style="width:600px;">
+		<figure class="img-group">	
+			<div class="img"><img src="media/website-in-field.png" alt=""></div>
+			<div class="img"><img src="media/tiny-computer.jpg" alt=""></div>
 		</figure>
 		<footer>
 			<p>This ESP module was used to host a website about a field, in a field.</p>

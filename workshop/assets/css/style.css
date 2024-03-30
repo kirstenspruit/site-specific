@@ -43,6 +43,7 @@ ol {
     margin: 0;
     padding: 0;
     padding-left: 1em;
+    list-style-type: decimal;
 }
 ol li {
     padding-left: 1em;
